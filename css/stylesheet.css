@@ -1,0 +1,55 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2015-feb-26, 18:39:42
+    Author     : Simon
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+body{
+    background-image: url("../images/gplaypattern.png");
+    background-repeat: repeat;
+}
+#header_image{
+    /*position: relative;*/
+    width: 100%;
+    height: 300px;
+    background-image: url("../images/header_index_white.png");
+    background-repeat: no-repeat;
+    background-color: #009FE3;
+    background-size:contain;
+    background-position:center;
+    /*outline: 2px black solid;*/
+    display: block;
+    /*    display: inline-block;
+    vertical-align: top;*/
+    /*line-height: 0;*/
+    /*overflow: auto;*/
+}
+#wrapper_main{
+    /*    vertical-align: top;
+        display: inline-block;*/
+    position: relative;
+    display: block;
+    /*line-height: 0;*/
+    width: 98%;
+    height: 800px;
+    margin: -6px 1% 1% 1%;
+
+
+    /*outline: 1px solid black;*/        
+}
+/*    max-width:100%; Making image re-adjust to smaller screen sizes
+    max-height:100%;
+    display: block;
+    outline: 1px black solid;*/

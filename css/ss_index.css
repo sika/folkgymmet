@@ -1,0 +1,133 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2015-feb-26, 18:35:05
+    Author     : Simon
+*/
+          
+#wrapper_events{
+    position: relative;
+    width: 350px;
+    /*left: 1%;*/
+}
+#navbar{
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    text-align: center;
+    height: 2%;
+    margin-bottom: 2%;
+}
+#navbar ul{
+    outline: 1px solid black;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*width: 100%;*/
+}
+#navbar ul li{
+    outline: 1px solid black;
+    display: inline-block;
+    margin: 0 10%;
+}
+#navbar ul li a{
+    display: block;
+    background-color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    margin: 0;
+}
+/*If keeping this style, no need for first and last of type*/
+.eventContainer:first-of-type{
+    /*border-top-width: 4px;*/
+    margin-top: 1%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /*border-radius: 5px;*/
+}
+.eventContainer:last-of-type{
+    margin-bottom: 1%;
+}
+.eventContainer{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    /*margin-top: 2px;*/
+    /*border-width: 1.5px 0px;*/
+    border-style: solid;
+    border-color: black;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0.5%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,1);
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,1); 
+    cursor: pointer;
+}
+.eventContainer:hover{
+    opacity: 0.5;
+}
+
+.eventContainer p{
+    position: absolute; /*positioned relative to the first parent element that has a position other than static*/
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.eventContainer:hover p{
+    /*text-decoration: underline;*/
+    font-size: 130%;
+}
+.eventList{
+    display: none;
+    width: 100%;
+}
+.eventList table{
+    /*outline: 1px solid black;*/
+    border-collapse: collapse; /*Inherited*/
+    border-spacing: 0; /*Inherited*/
+    table-layout: fixed; /*Allowing table (th/td) width to be set (th/td width must be set)*/
+    line-height: 1; /*Removing whitespace. Inherited*/
+    width: 100%;
+    text-align: center;
+    margin: 1% 0;
+}
+.eventList table tr:first-of-type{
+    /*outline: 1px solid black;*/
+    font-weight: bold;
+    border-bottom: 1px solid grey;
+
+}
+.eventList table tr{
+    /*outline: 1px solid black;*/
+    /*font-weight: bold;*/
+    border-bottom: 1px solid grey;
+    /*padding-bottom: 1px;*/
+}
+.eventList table tr:nth-child(even){
+    background-color: #BCCACA;
+}
+.eventList table td{
+    /*outline: 1px solid black;*/
+    width: 100%; /*Locking width for text to keep same width as images*/
+    padding-top: 5px; /*5px; Creating some space between image and text*/
+    position: relative; /*Contained elements can be positioned absolute to enable position formatting*/
+    height: 40px;
+    vertical-align: middle;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    font-size: 80%;
+}
